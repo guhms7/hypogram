@@ -1,0 +1,45 @@
+
+footer{
+    width: 100%;
+    background-color: var(--footer-bg);
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    width: var(--container);
+    margin: auto;
+    justify-content: space-between;
+}
+
+.footer-container div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#copy{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--medium);
+    gap: 0;
+    color: #FFF;
+}
+
+@media (width < 1400px) {
+    .footer-container{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    #logo{
+        width: 100px;
+        margin: 0;
+    }
+
+    #git{
+        width: 45px;
+        margin: 0;
+    }
+}
+

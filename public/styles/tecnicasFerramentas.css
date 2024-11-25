@@ -1,0 +1,13 @@
+@import "header.css";
+@import "footer.css";
+@import "questionarioModal.css";
+@import "global.css";
+@import "hypogram.css";
+
+section div{
+    margin: auto;
+}
+
+section > div img{
+    align-self: center;
+}

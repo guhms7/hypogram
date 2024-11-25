@@ -1,0 +1,30 @@
+@import 'questionario.css';
+
+#secao-questoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    position: fixed;
+    z-index: 15;
+    left: 25vw;
+    top: 52vh;
+    transform: translateY(-50%);
+    width: 50%;
+    max-height: 90vh; 
+    overflow-y: auto; 
+    background-color: var(--main-bg); 
+    border-radius: 8px;
+    padding: 20px; 
+}
+
+.lista-questoes{
+    padding: 10px 25px;
+}
+
+#secao-questoes .cabecalho{
+    width: 90%;
+}
+
+
+

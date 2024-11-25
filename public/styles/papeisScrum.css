@@ -1,0 +1,22 @@
+@import "header.css";
+@import "footer.css";
+@import "questionarioModal.css";
+@import "global.css";
+@import "hypogram.css";
+
+ol {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+ol li::before {
+    content: "-"; 
+    margin-right: 0.5rem; 
+    color: #343A40; 
+}
+
+.questionario{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}

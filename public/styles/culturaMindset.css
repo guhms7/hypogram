@@ -1,0 +1,36 @@
+@import "header.css";
+@import "footer.css";
+@import "questionarioModal.css";
+@import "global.css";
+@import "hypogram.css";
+
+ol {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+ol li::before {
+    content: "-"; 
+    margin-right: 0.5rem;
+    color: var(--text-color); 
+}
+
+@media (width < 1400px) {
+
+    .container{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    main {
+        text-align: center;
+        width: 100%;
+        padding-top: 5rem;
+    }
+
+    .img{
+        width: 100%;
+        padding: auto;
+        margin: 5%;
+    }
+}

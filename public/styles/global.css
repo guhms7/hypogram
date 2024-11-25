@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --main-bg:#DEE2E6;
+    --header-bg: #3c096c;
+    --footer-bg: #222222;
+    --login-bg: #354545;
+    --questoes-bg:#D9D9D9;
+    --info-aux-color:#868686;
+    --text-color:#343A40;
+
+
+    --h1: 5.2rem;
+    --h2: 2.8rem;
+    --h3: 2rem;
+
+    --small: 1.2rem;
+    --normal: 1.6rem;
+    --medium: 1.8rem;
+    --xx-large: 3.5rem;
+
+    /* --container: 140rem; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Roboto';
+}
+
+button{
+    width: 10rem;
+    height: 4rem;
+    border: 1px solid black;
+    font-size: var(--normal);
+}
+
+main{
+    margin-top: 5rem;
+}
+
+.questionario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 5rem;
+}
+
+.questionario > p{
+    color: var(--info-aux-color);
+}
+
+.questionario > h2{
+    font-size: var(--h2);
+}
+
+
+.button-questionario{
+    background-color: var(--footer-bg);
+    color: var(--main-bg);
+    border-radius: 5px;
+    width: 20rem;
+}
+
+.button-questionario:hover{
+    cursor: pointer;
+}

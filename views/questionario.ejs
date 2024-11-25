@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/scripts/index.js"></script>
+    <script type="module" src="/scripts/enviarQuestionario.js"></script>
+    <link rel="stylesheet" href="/styles/questionario.css" />
+
+    <title>Questionário</title>
+  </head>
+  <body>
+    <main>
+      <section id="secao-questoes">
+        <section class="cabecalho">
+          <h1><%= dadosQuestionario.titulo %></h1>
+          <p>
+            Você está prestes a iniciar o teste sobre o conteúdo do capítulo um.
+            Para ser aprovado é necessário acertar pelo menos 2 questões. Leia
+            atentamente cada pergunta e selecione a resposta que considerar
+            correta. Boa sorte!
+          </p>
+        </section>
+        <section class="questoes">
+          <input
+            type="hidden"
+            id="questionarioId"
+            value="<%= dadosQuestionario.id %>"
+          />
+
+          <form
+            action="/questionario/<%= dadosQuestionario.id%>/enviar"
+            method="POST"
+            id="form-questionario"
+          >
+            <ol class="lista-questoes">
+              <% dadosQuestionario.questoes.forEach((element) => { %>
+              <article>
+                <li><%= element.conteudo %></li>
+                <fieldset class="alternativas">
+                  <div class="alternativa-verdadeira">
+                    <input
+                      type="radio"
+                      name="questao<%= element.id %>"
+                      value="true"
+                    />
+                    <label for="alternativa-verdadeira<%= element.id %>"
+                      >verdadeiro</label
+                    >
+                  </div>
+                  <div class="alternativa-falsa">
+                    <input
+                      type="radio"
+                      name="questao<%= element.id %>"
+                      value="false"
+                    />
+                    <label for="alternativa-falsa<%= element.id %>"
+                      >falso</label
+                    >
+                  </div>
+                </fieldset>
+              </article>
+              <% }); %>
+            </ol>
+            <div class="botoes">
+              <button type="button" id="button-voltar" onclick="window.history.back()">
+                Voltar
+              </button>
+              <button type="submit" id="button-enviar">Enviar</button>
+            </div>
+          </form>
+        </section>
+      </section>
+
+      <!-- Modal de resultado -->
+      <section id="modal-resultado" class="modal" style="display: none">
+        <div class="modal-content">
+          <h2 id="resultado-titulo">Resultado</h2>
+          <p id="resultado-mensagem"></p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

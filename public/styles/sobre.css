@@ -1,0 +1,184 @@
+
+@import 'global.css';
+@import 'header.css';
+@import 'footer.css';
+
+main {
+    position: relative;
+    width: 100%;
+    padding-top: 20rem;
+    background-image: url(/public/imgs/bg-sobre.jpeg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: var(--container);
+    margin: auto;
+    gap: 10rem;
+}
+
+section {
+    display: flex; 
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section img{
+    z-index: 2;
+}
+
+.text h1 {
+    font-size: var(--h1);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    font-size: var(--medium);
+    text-align: justify;
+    gap: 1rem;
+    color: #FFF;
+    position: relative; 
+    z-index: 2; 
+}
+
+#two .text {
+    width: 500px;
+}
+
+#two h1 {
+    text-align: center;
+}
+
+#three {
+    padding-bottom: 20rem;
+}
+
+#three .text {
+    width: 500px;
+}
+
+a:nth-child(1) {
+    font-weight: normal;
+}
+
+a:nth-child(2) {
+    font-weight: bold;
+}
+
+/* @media (width < 1400px) {
+
+    .container{
+        width: 80%;
+        flex-wrap: wrap;
+        padding-bottom: 5rem;
+    }
+
+    #one, #two, #three{
+        gap: 5rem;
+    }
+
+    #two .text {
+        width: 50%;
+    }
+
+    #two img{
+        width: 50%;
+    }
+
+    #three img{
+        width: 50%;
+    }
+} */
+
+@media(width < 768px){
+    #one .titulo{
+        display: flex;
+        align-self: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px){
+    
+    #one, #two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+    }
+
+    #one .text{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    #one img{
+        display: none;
+    }
+
+    #two .text {
+        width: 100%;
+    }
+
+    #three{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    #three .text{
+        display: flex;
+        align-items: center;
+    }
+
+    img{
+        margin-top: 5%;
+        width: 40%;
+    }
+}
+
+@media (min-width: 1001px){
+
+    .container{
+        width: 80%;
+        flex-wrap: wrap;
+        padding-bottom: 5rem;
+    }
+
+    #one, #two, #three{
+        gap: 5rem;
+    }
+
+    #two .text {
+        width: 50%;
+    }
+
+    #two img{
+        width: 50%;
+    }
+
+    #three img{
+        width: 50%;
+    }
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hypogram</title>
+    <link rel="stylesheet" href="/styles/logincadastro.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="/scripts/abrirTela.js"></script>
+    <script src="/scripts/setUsuario.js"></script>
+    <!-- <script type="module" src="./scripts/index.js" defer></script> -->
+  </head>
+
+  <body>
+    <main id="Cadastro">
+      <form id="FormCadastro" action="/criarUsuario" method="post">
+        <h1>Cadastro</h1>
+        <div>
+          <input type="text" name="nome" id="name" placeholder="Nome" />
+          <i class="fas fa-user"></i>
+        </div>
+        <div>
+          <input type="email" name="email" id="email" placeholder="E-mail" />
+          <i class="fas fa-envelope"></i>
+        </div>
+        <input type="password" name="senha" id="password" placeholder="Senha" />
+        <input
+          type="password"
+          name="confirmar_senha"
+          id="confirmar_senha"
+          placeholder="Confirmar senha"
+        />
+
+        <button type="submit" onclick="setUsuario()">Cadastrar</button>
+        <button type="button" onclick="abrirTela('/login')">Voltar</button>
+      </form>
+    </main>
+  </body>
+</html>

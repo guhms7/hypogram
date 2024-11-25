@@ -1,0 +1,95 @@
+@import 'headermobile.css';
+
+header{
+    width: 100%;
+    min-height: 7.2rem;
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--header-bg); 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    position: fixed;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    width: var(--container);
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--normal);
+    padding: 1rem;
+}
+
+button:hover, a:hover{
+    transform: scale(1.1);
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+nav a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+a:nth-child(1){
+    font-weight: bold;
+}
+
+header img{
+    width: 23rem;
+}
+
+header button{
+    color: #FFF;
+    background-color: var(--header-bg);
+    border-color: #FFF;
+}
+
+header #botoes{
+    display: flex;
+    align-self: center;
+    gap: 4rem;
+}
+
+@media (width < 1400px) {
+    .header-container{
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+@media (max-width < 768px){
+    .header-container{
+    
+        font-size: var(--small);
+        padding: 1rem;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    .header-container{
+    
+        font-size: var(--small);
+        padding: 1rem;
+    }
+    
+    header button{
+        border-color: transparent;
+      
+    }
+    
+    header #botoes{
+        width: 100%;
+    }
+
+}

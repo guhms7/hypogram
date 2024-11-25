@@ -1,0 +1,81 @@
+
+@import "header.css";
+@import "footer.css";
+@import "questionarioModal.css";
+@import "global.css";
+@import "hypogram.css";
+
+* {
+    box-sizing: border-box;
+}
+
+
+.incremento-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #DEE2E6;
+    margin-top: 20px;
+}
+
+.texto-lateral {
+    width: 55%;
+    font-size: 15px;
+}
+
+.img-lateral {
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-lateral img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+@media (max-width: 1400px) {
+
+    .container{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    main {
+        text-align: center;
+        width: 100%;
+        padding-top: 5rem;
+    }
+
+    .incremento-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .incremento-container > .texto-lateral{
+        margin: 0;
+        padding: 0;
+    }
+
+    .texto-lateral{
+        width: 100%;
+    }
+
+    .img-lateral{
+        width: 50%;
+        justify-content: center;
+        margin: 5%;
+        padding: auto;
+    }
+
+    .img{
+        width: 100%;
+        padding: auto;
+    }
+}

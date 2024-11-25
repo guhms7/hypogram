@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papéis do Scrum</title>
+    <link rel="stylesheet" href="/styles/papeisScrum.css">
+</head>
+
+<body>
+    <main>
+        <h1>Papéis do Scrum</h1>
+
+        <section>
+            <article>
+                <div class="img">
+                    <img src="/imgs/Papeis1.svg" alt="Scrum Master/Dono do Produto/Time">
+                </div>
+
+                <h3>Product Owner (PO)</h3>
+                <p>
+                    O Product Owner é o responsável por maximizar o valor do produto resultante do trabalho da equipe Scrum.
+                    Este papel é crucial para garantir que o produto atenda às necessidades e expectativas dos stakeholders.
+                </p>
+                <p>O PO tem algumas funcionalidades, como:</p>
+                <ol>
+                    <li>Responsável pela visão do produto: Define o que deve ser construído e prioriza o trabalho para maximizar o valor do produto.</li>
+                    <li>Gerencia o Backlog do Produto: Cria, refina e prioriza o Backlog do Produto, uma lista ordenada de requisitos e tarefas.</li>
+                    <li>Comunica-se com as partes interessadas: Atua como o principal ponto de contato entre a equipe de desenvolvimento e os stakeholders.</li>
+                </ol>
+
+                <p>Um exemplo direto do papel de PO:</p>
+                <p>
+                    Imagine um PO que está trabalhando em um aplicativo de e-commerce. Ele pode definir que a funcionalidade de “pagamento com um clique” é a prioridade para a próxima iteração.
+                    Ele revisa e prioriza os itens do backlog relacionados a essa funcionalidade e colabora com a equipe de desenvolvimento para garantir que o produto atenda às necessidades dos usuários finais.
+                </p>
+
+                <h3>Scrum Master</h3>
+                <p>O Scrum Master é o facilitador do time Scrum. Seu papel é garantir que a equipe siga as práticas e os valores do Scrum, ajudando a remover impedimentos e promovendo um ambiente de trabalho eficaz.</p>
+                <p>Assim como o PO, o Scrum Master tem suas funcionalidades:</p>
+                <ol>
+                    <li>Facilitador do Processo Scrum: Garante que o Scrum esteja sendo seguido corretamente e remove impedimentos.</li>
+                    <li>Mentor e Coach: Auxilia a equipe a adotar e melhorar práticas ágeis.</li>
+                    <li>Protege a Equipe: Defende a equipe contra interferências externas e distrações que possam impactar a produtividade.</li>
+                </ol>
+
+                <p>Um exemplo da funcionalidade do Scrum Master:</p>
+                <p>
+                    Em um projeto de desenvolvimento de software, o Scrum Master percebe que a equipe está enfrentando dificuldades devido à falta de clareza nas especificações.
+                    Ele organiza uma reunião para esclarecer os requisitos e resolve o problema de comunicação entre o PO e a equipe.
+                </p>
+
+                <h3>Time de Desenvolvimento</h3>
+                <p>
+                    A Equipe de Desenvolvimento é composta pelos profissionais que trabalham diretamente na criação do produto.
+                    Eles são responsáveis por entregar incrementos de produto que atendam aos critérios de aceitação e às definições de pronto estabelecidas.
+                </p>
+                <p>As funções do time de desenvolvimento são:</p>
+                <ol>
+                    <li>Entrega de Incrementos de Produto: O time transforma os itens do Backlog do Produto em incrementos funcionais e potencialmente liberáveis.</li>
+                    <li>Auto-organização: O time decide como melhor realizar o trabalho e organiza-se para atingir os objetivos da Sprint.</li>
+                    <li>Multidisciplinaridade: Possui todas as habilidades necessárias para entregar o produto, incluindo desenvolvimento, design, testes, etc.</li>
+                </ol>
+
+                <p>Um exemplo das ações do time de desenvolvimento:</p>
+                <p>
+                    Em um projeto de desenvolvimento web, o time de desenvolvimento pode ser composto por desenvolvedores, designers e testadores.
+                    Durante uma Sprint, o time pode decidir que o melhor caminho para implementar uma nova funcionalidade é através de uma abordagem de design iterativo.
+                </p>
+
+                <div class="img">
+                    <img src="/imgs/Papeis2.svg" alt="Scrum Master, Product Owner and Development Team">
+                </div>
+
+                <h3>Conclusão</h3>
+                <p>
+                    Cada papel no Scrum é essencial para garantir que o projeto seja entregue com sucesso.
+                    O Product Owner garante que a visão e o valor do produto sejam claros, o Scrum Master facilita o processo e remove obstáculos,
+                    e o Time de Desenvolvimento entrega o trabalho. A colaboração entre todos esses papéis é crucial para o sucesso de projetos ágeis.
+                </p>
+            </article>
+
+            <section class="questionario">
+                <h1>Questionário</h1>
+                <p>Clique abaixo para abrir as questão</p>
+                <button onclick="getQuestionario('3')" class="button-questionario">Questionário</button>
+            </section>
+
+            <div class="alinhamento">
+                <div class="next-previous">
+                    <a href="/principiosValores">Princípios e valores</a>
+                    <a href="/ArtefatosScrum">Artefatos Scrum</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="./scripts/index.js"></script>
+    <script type="module" src="../view/scripts/indexModalQuestionario.js"></script>
+    <script src="../public/data/questionario_data.js"></script>
+    <script src="./scripts/getQuestionario.js"></script>
+    <script src="../view/scripts/abrirTela.js"></script>
+</body>
+
+</html>

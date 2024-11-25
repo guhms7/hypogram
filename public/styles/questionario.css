@@ -1,0 +1,152 @@
+@import 'global.css';
+@import 'header.css';
+@import 'footer.css';
+
+
+p, li, label{
+    font-size: 2rem;
+}
+
+#secao-questoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; 
+}
+
+#secao-questoes section{
+    margin: 2%;
+    width: 75%;
+}
+
+section > h1{
+    font-size: var(--h1);
+}
+
+section > h3 {
+    font-size: var(--h3);
+}
+
+.cabecalho {
+    text-align: center; 
+}
+
+.questoes {
+    background-color: var(--questoes-bg);
+    padding: 2rem; 
+}
+
+.lista-questoes{
+    padding: 30px 80px;
+}
+
+.lista-questoes > article  {
+
+    margin-bottom: 5rem;
+}
+
+.lista-questoes > article > li {
+    text-align: justify;
+}
+
+fieldset{
+    border: none;
+}
+
+.alternativas{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.alternativas> div > input{
+    margin-right: 1rem;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.botoes.centralizado{
+    justify-content: center;
+  }
+
+button{
+    background-color: var(--footer-bg);
+    color: var(--main-bg);
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+.feedback-icon {
+    font-size: 2em;
+    margin-left: 10px;
+    display: inline-block;
+    transition: opacity 0.3s;
+  }
+  
+#check-icon {
+    color: green;
+}
+  
+#x-icon {
+    color: red;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    opacity: 1;
+    transition: opacity 1s ease-out; 
+}
+  
+.modal.fade-out {
+    opacity: 0; 
+}
+
+.modal-content {
+    color: var(--main-bg);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.modal-content.aprovado {
+    background-color: #06734B;
+}
+  
+
+.modal-content.reprovado {
+    background-color: #C41A1A;
+}
+
+
+@media (max-width: 1400px) {
+    .lista-questoes{
+        padding: 15px 50px;
+    }
+
+    section {
+        width: 90%;
+    }
+    p, li, label {
+        font-size: 1.5rem; 
+    }
+    
+}
+
+

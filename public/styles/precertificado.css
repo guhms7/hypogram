@@ -1,0 +1,73 @@
+@import 'global.css';
+@import 'header.css';
+@import 'footer.css';
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section {
+    position: relative;
+    margin: 5rem;
+}
+
+@media (max-width: 768px) {
+    section {
+        margin: 2rem;
+    }
+
+    main {
+        height: auto;
+        padding: 2rem;
+    }
+}
+
+
+#img-certificadog {
+
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.botoes {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+button {
+    z-index: 2;
+    background-color: var(--footer-bg);
+    color: var(--main-bg);
+    width: 13rem;
+}
+
+@media (max-width: 480px) {
+    .botoes {
+        flex-direction: column;
+        top: 85%;
+    }
+
+    button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        top: 80%;
+    }
+
+    button {
+        width: 50%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}

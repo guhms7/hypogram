@@ -1,0 +1,91 @@
+@import 'header.css';
+@import 'footer.css';
+@import "questionarioModal.css";
+@import 'global.css';
+@import "hypogram.css";
+
+
+p, li, label{
+    font-size: 1.6rem;
+    text-align: justify;
+} 
+
+
+.topico h2 {
+    text-align: left;
+    align-self: flex-start;
+} 
+
+.linhas-framework{
+    display: flex;
+    justify-content: space-around;
+    
+ } 
+
+ .linhas-framework-imagem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    
+ } 
+
+ /* .linhas-framework > div{
+    width: 40%;
+ }  */
+
+ .imagens-framework{
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+ }
+
+ @media (max-width: 768px) {
+   p, li, label {
+       font-size: 1.4rem;
+   }
+
+   .linhas-framework {
+       flex-direction: column;
+       gap: 2rem;
+   }
+
+   .linhas-framework-imagem {
+       flex-direction: column;
+       text-align: center;
+   }
+
+   .linhas-framework-imagem > div {
+       flex: 1 1 100%;
+   }
+
+   .linhas-framework-imagem img {
+       margin-top: 2rem;
+       max-width: 80%;
+   }
+
+   .imagens-framework {
+       flex-direction: column;
+       gap: 2rem;
+       align-items: center;
+   }
+}
+
+@media (max-width: 480px) {
+   p, li, label {
+       font-size: 1.2rem;
+   }
+
+   .linhas-framework {
+       gap: 1rem;
+   }
+
+   .linhas-framework-imagem img {
+       max-width: 100%;
+   }
+
+   .imagens-framework img {
+       max-width: 80%;
+   }
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificado</title>
+    <link rel="stylesheet" href="/styles/certificado.css" />
+    <script type="module" src="/scripts/index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="certificado" id="certificado">
+        <div class="certificado-border">
+          <div class="certificado-content">
+            <h1>CERTIFICADO</h1>
+
+            <h3>ESTE CERTIFICADO COMPROVA QUE</h3>
+            <p class="nome" id="nome-aluno"><%= nomeAluno %></p>
+            <h3>CONCLUIU COM ÊXITO O CURSO SOBRE METODOLOGIA SCRUM.</h3>
+            <h3>EMITIDO EM <span id="data">22/11/2024</span></h3>
+            <div class="footer">
+              <div>
+                <p>Equipe Hypogram</p>
+                <p>CNPJ 00-000.000/0000-00</p>
+              </div>
+              <div>
+                <p>Hypscrum Cursos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button id="download-pdf">Baixar certificado</button>
+    </main>
+
+    <script src="/scripts/certificado.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="/scripts/downloadCertificado.js"></script>
+  </body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hypogram</title>
+    <script type="module" src="/scripts/index.js" defer></script>
+    <link rel="stylesheet" href="/styles/eventoScrum.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <article>
+          <div>
+            <h1>Eventos do Scrum</h1>
+            <img src="/imgs/eventos-scrum.svg" alt="Eventos do scrum" />
+          </div>
+
+          <h2>Sprint</h2>
+          <p>
+            A Sprint é o coração do Scrum. Trata-se de um ciclo de trabalho que
+            geralmente dura de uma a quatro semanas, durante o qual um
+            incremento do produto é desenvolvido. O objetivo da Sprint é
+            entregar um resultado potencialmente utilizável ao final de cada
+            ciclo. Os temas abordados incluem:
+          </p>
+          <p>
+            Planejamento do trabalho: O que pode ser feito nesta Sprint? "Nesta
+            Sprint, podemos focar no desenvolvimento da funcionalidade de
+            gerenciamento de usuários, que inclui a criação, edição e exclusão
+            de perfis. Além disso, planejamos implementar melhorias na interface
+            do usuário e resolver algumas questões técnicas identificadas nas
+            Sprints anteriores. A ideia é priorizar os itens que trazem maior
+            valor ao cliente e que são essenciais para a próxima entrega."
+          </p>
+
+          <h3>Definição de pronto</h3>
+          <p>
+            Quais critérios devem ser atendidos para que o incremento seja
+            considerado finalizado? Para que o incremento seja considerado
+            'pronto', os seguintes critérios devem ser atendidos:
+          </p>
+
+          <ol type="a">
+            <li>
+              Todos os requisitos funcionais devem estar implementados e
+              testados.
+            </li>
+            <li>
+              A funcionalidade deve ser revisada e aprovada pelo Product Owner.
+            </li>
+            <li>A documentação técnica e de usuário deve estar atualizada.</li>
+            <li>
+              Todos os testes automatizados devem ser executados com sucesso,
+              garantindo que não há regressões.
+            </li>
+            <li>
+              O código deve estar revisado e integrado ao repositório principal.
+            </li>
+          </ol>
+
+          <p id="borda-lateral">
+            Comprometimento da equipe: A equipe se compromete a completar o que
+            planejou. Exemplo: "A equipe se compromete a completar as tarefas
+            planejadas nesta Sprint, reconhecendo que trabalharemos juntos para
+            superar quaisquer desafios que possam surgir. Cada membro se
+            responsabiliza pelas suas tarefas específicas, e estaremos sempre
+            disponíveis para ajudar uns aos outros, garantindo que todos os
+            itens do backlog sejam entregues com qualidade até o final do
+            ciclo."
+          </p>
+        </article>
+
+        <article>
+          <h2>Sprint Planning</h2>
+          <p>
+            Esse evento acontece no início de cada Sprint e é fundamental para o
+            planejamento do trabalho a ser realizado. A equipe de
+            desenvolvimento, junto com o Product Owner e o Scrum Master, define
+            quais itens do Product Backlog serão abordados. Os principais pontos
+            discutidos são:
+          </p>
+          <h3>Objetivo da Sprint: O que se espera alcançar?</h3>
+          <p>
+            "O objetivo desta Sprint é implementar a funcionalidade de
+            gerenciamento de usuários, que permitirá aos administradores criar,
+            editar e excluir perfis de usuários de forma eficiente. Além disso,
+            queremos garantir que a interface do usuário seja intuitiva e
+            responsiva. Ao final da Sprint, esperamos ter um incremento do
+            produto que atenda a essas necessidades e possa ser apresentado ao
+            cliente."
+          </p>
+          <div id="sprint-planning">
+            <div id="conteudo-sprint-planning">
+              <h3>
+                Seleção de itens: Quais itens do backlog serão trabalhados?
+              </h3>
+              <p>
+                "Selecionamos os seguintes itens do Product Backlog para esta
+                Sprint:
+              </p>
+              <ol type="a">
+                <li>Implementação da criação de usuários.</li>
+                <li>Implementação da edição de usuários.</li>
+                <li>Implementação da exclusão de usuários.</li>
+                <li>
+                  Melhorias na interface do usuário para o gerenciamento de
+                  usuários.
+                </li>
+                <li>
+                  Testes automatizados para cada uma dessas funcionalidades.
+                </li>
+              </ol>
+            </div>
+            <img src="/imgs/evento-sprint-planning.svg" alt="Sprint planning" />
+          </div>
+
+          <p>
+            Esses itens foram priorizados com base na sua relevância para o
+            cliente e no impacto na usabilidade do sistema."
+          </p>
+
+          <h3>
+            Planejamento das atividades: Como os itens serão implementados?
+          </h3>
+          <p>"Planejamos implementar as funcionalidades da seguinte forma:</p>
+          <ol type="a">
+            <li>
+              Criação de usuários: Um membro da equipe será responsável por
+              desenvolver a lógica de backend e a interface correspondente,
+              utilizando a biblioteca de componentes UI que já estamos usando.
+            </li>
+            <li>
+              Edição e exclusão de usuários: Outros dois membros trabalharão em
+              paralelo na lógica de edição e exclusão, garantindo que ambos os
+              processos estejam integrados ao mesmo sistema de autenticação.
+            </li>
+            <li>
+              Interface do usuário: Um designer irá colaborar com os
+              desenvolvedores para assegurar que as melhorias na interface
+              estejam alinhadas com as melhores práticas de usabilidade
+            </li>
+            <li>
+              Testes automatizados: Um membro da equipe será encarregado de
+              escrever e executar os testes automatizados conforme cada
+              funcionalidade for sendo implementada, garantindo que as novas
+              adições não quebrem o que já existe.
+            </li>
+            <li>
+              Faremos reuniões de acompanhamento duas vezes por semana para
+              discutir o progresso e resolver quaisquer bloqueios que surgirem
+              durante a implementação."
+            </li>
+          </ol>
+        </article>
+
+        <article>
+          <h2>Daily Scrum</h2>
+          <p>
+            Este é um evento diário, de curta duração (geralmente 15 minutos),
+            onde a equipe se reúne para sincronizar as atividades e discutir o
+            progresso. Cada membro da equipe responde a
+            <span>três perguntas:</span>
+          </p>
+
+          <h3>O que fiz desde a última reunião?</h3>
+          <p>
+            "Desde a última reunião, finalizei a implementação da funcionalidade
+            de criação de usuários e escrevi os testes automatizados para
+            garantir que tudo está funcionando corretamente. Além disso, revisei
+            o código de um colega para a edição de usuários e fiz algumas
+            sugestões de melhoria."
+          </p>
+
+          <h3>O que pretendo fazer até a próxima reunião?</h3>
+          <p>
+            "Hoje, vou focar na implementação da funcionalidade de edição de
+            usuários. Meu objetivo é ter a interface e a lógica de backend
+            prontas para que possamos testá-las juntos amanhã. Também pretendo
+            começar a documentar o código que já escrevi para facilitar a
+            compreensão futura."
+          </p>
+
+          <h3>Existem impedimentos que estão me bloqueando?</h3>
+          <p>
+            "Atualmente, não estou enfrentando impedimentos. No entanto,
+            gostaria de saber se alguém já teve experiência com a biblioteca de
+            autenticação que estamos usando, pois pretendo utilizá-la na
+            funcionalidade de edição e isso pode ajudar a evitar problemas."
+          </p>
+
+          <p>
+            O foco é manter a comunicação aberta e identificar rapidamente
+            obstáculos que possam afetar o progresso.
+          </p>
+
+          <img src="/imgs/evento-daily.svg" alt="Daily scrum" />
+        </article>
+
+        <article>
+          <h2>Sprint Review</h2>
+          <p>
+            Ao final da Sprint, a equipe realiza uma Sprint Review para
+            inspecionar o incremento do produto e adaptar o Product Backlog, se
+            necessário. Este evento inclui:
+          </p>
+          <p>
+            Demonstração do trabalho concluído: A equipe apresenta o que foi
+            desenvolvido durante a Sprint.
+          </p>
+          <p>
+            Feedback dos stakeholders: Os participantes oferecem sugestões e
+            críticas, ajudando a moldar futuras iterações.
+          </p>
+          <p>
+            Revisão do Product Backlog: Ajustes são feitos com base no feedback
+            recebido.
+          </p>
+        </article>
+
+        <article>
+          <h2>Sprint Retrospectiva</h2>
+          <p>
+            Após a Sprint Review, a equipe se reúne para refletir sobre o
+            processo e a colaboração durante a Sprint. O objetivo é identificar
+            o que funcionou bem e o que pode ser melhorado. Os tópicos
+            discutidos incluem:
+          </p>
+
+          <ol type="1">
+            <li>
+              O que correu bem?
+              <ul>
+                <li>
+                  "Durante esta Sprint, a colaboração entre os membros da equipe
+                  foi excepcional. Todos estavam dispostos a ajudar uns aos
+                  outros, e conseguimos completar todas as funcionalidades
+                  planejadas dentro do prazo. Além disso, a comunicação foi
+                  muito eficaz, especialmente nas reuniões diárias, onde
+                  conseguimos identificar e resolver problemas rapidamente."
+                </li>
+              </ul>
+            </li>
+            <li>
+              O que não funcionou como esperado?
+              <ul>
+                <li>
+                  "Apesar de termos avançado bem, as reuniões diárias se
+                  estenderam mais do que o ideal em algumas ocasiões, o que
+                  acabou consumindo um tempo precioso. Além disso, tivemos
+                  algumas dificuldades com a integração da biblioteca de
+                  autenticação, que atrasou o desenvolvimento de uma das
+                  funcionalidades."
+                </li>
+              </ul>
+            </li>
+            <li>
+              Quais ações podem ser implementadas na próxima Sprint para
+              melhorar o desempenho?
+              <ul>
+                <li>
+                  "Para a próxima Sprint, sugiro que estabeleçamos um limite de
+                  15 minutos para as Daily Scrums, a fim de manter o foco e a
+                  objetividade. Também podemos agendar uma sessão de 'pair
+                  programming' na primeira metade da Sprint para abordar a
+                  integração da biblioteca de autenticação, garantindo que todos
+                  estejam na mesma página desde o início. Além disso, seria útil
+                  revisar a documentação da API antes de começar, para evitar
+                  possíveis retrabalhos."
+                </li>
+              </ul>
+            </li>
+          </ol>
+
+          <p>
+            Com isso, concluímos que os eventos do Scrum são projetados para
+            fomentar a colaboração e a melhoria contínua. Eles garantem que a
+            equipe esteja alinhada com os objetivos do projeto e que qualquer
+            desvio do plano seja identificado e corrigido rapidamente. Ao adotar
+            essa estrutura, as equipes podem entregar valor ao cliente de forma
+            eficaz e adaptável, respondendo às mudanças com agilidade e
+            eficiência.
+          </p>
+
+          <img
+            src="/imgs/eveto-scrum-retrospectiva.svg"
+            alt="Sprint retrospective"
+          />
+        </article>
+
+        <section class="questionario">
+          <h2>Questionário</h2>
+          <p>Clique abaixo para abrir as questões</p>
+          <button
+            class="button-questionario"
+            onclick="getQuestionario('5')"
+            aria-label="Abrir questionário de avaliação"
+          >
+            Questionário
+          </button>
+        </section>
+
+        <div class="next-previous">
+          <a href="/artefatosScrum">Artefatos do scrum</a>
+          <a href="/frameworkTrabalho">Framework de trabalho</a>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/scripts/indexModalQuestionario.js"></script>
+    <script src="/data/questionario_data.js"></script>
+    <script src="/scripts/getQuestionario.js"></script>
+    <script src="/scripts/abrirTela.js"></script>
+  </body>
+</html>
